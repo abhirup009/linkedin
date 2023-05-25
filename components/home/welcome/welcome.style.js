@@ -5,6 +5,7 @@ import { COLORS, FONT, SIZES } from "../../../constants";
 const styles = StyleSheet.create({
   container: {
     width: "100%",
+    marginHorizontal: SIZES.medium
   },
   userName: {
     fontFamily: FONT.regular,
@@ -22,16 +23,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "row",
     marginTop: SIZES.large,
+    marginHorizontal: SIZES.medium,
     height: 50,
   },
   searchWrapper: {
     flex: 1,
     backgroundColor: COLORS.white,
-    marginRight: SIZES.small,
+    marginRight: SIZES.large,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: SIZES.medium,
-    height: "100%",
+    height: "100%"
   },
   searchInput: {
     fontFamily: FONT.regular,
@@ -55,6 +57,7 @@ const styles = StyleSheet.create({
   tabsContainer: {
     width: "100%",
     marginTop: SIZES.medium,
+    marginHorizontal: SIZES.medium
   },
   tab: (activeJobType, item) => ({
     paddingVertical: SIZES.small / 2,
